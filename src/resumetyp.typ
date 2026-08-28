@@ -12,6 +12,7 @@
 // CONFIG STATES
 #let resume-inline-separator = state("inline-separator", [])
 #let resume-contacts-separator = state("contacts-separator", [])
+
 // TEMPLATE CONFIG
 #let resume(
   contact-info-position: left,
@@ -281,6 +282,7 @@
     )
   })
 }
+
 // PRINT FUNCTIONS
 #let print-contact = [
   #title[#context resume-name.get()]<contact-info>
