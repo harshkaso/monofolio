@@ -12,7 +12,8 @@ exclude = [
     ".git",
     "example-resume.pdf",
     "banner.png",
-    "docs"
+    "docs",
+    ".DS_Store",
 ]
 
 [template]

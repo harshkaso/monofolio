@@ -1,4 +1,4 @@
 # ResumeTyp
 A modular, data-driven Typst resume framework designed to make customization simple.
 
-![Banner](banner.png)
+![example resumes built using resumetyp template](banner.png)
