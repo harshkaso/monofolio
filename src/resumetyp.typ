@@ -67,7 +67,13 @@
     url
   }
 
-  url.split("/").at(0)
+  let domain = url.split("/").at(0)
+
+  if domain.starts-with("www.") {
+    domain.slice(4)
+  } else {
+    domain
+  }
 }
 
 #let to-string(it) = {
@@ -281,7 +287,7 @@
   #context {
     resume-contact.get()
       .map(entry => format-item(entry.at(1), entry.at(0)))
-      .join([ #resume-contacts-separator.get() ])
+      .join([#resume-contacts-separator.get()])
   } <contact-info>
 ]
 
