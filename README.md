@@ -1,4 +1,10 @@
 # ResumeTyp
+
+[![Typst Universe](https://img.shields.io/badge/Typst%20Universe-resumetyp-239dad?logo=typst)](https://typst.app/universe/package/resumetyp)
+[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://typst.app/universe/package/resumetyp)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/harshkaso/resumetyp?style=flat&logo=github)](https://github.com/harshkaso/resumetyp/stargazers)
+
 A modular, data-driven Typst resume framework designed to make customization simple.
 
 ![example resumes built using resumetyp template](banner.png)
