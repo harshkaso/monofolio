@@ -1,8 +1,8 @@
 # ResumeTyp
 
 [![Typst Universe](https://img.shields.io/badge/Typst%20Universe-resumetyp-239dad?logo=typst)](https://typst.app/universe/package/resumetyp)
-[![Version](https://img.shields.io/badge/version-0.1.0-blue)](https://typst.app/universe/package/resumetyp)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![Current package version](https://img.shields.io/badge/version-0.1.0-blue)](https://typst.app/universe/package/resumetyp)
+[![Project License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/harshkaso/resumetyp?style=flat&logo=github)](https://github.com/harshkaso/resumetyp/stargazers)
 
 A modular, data-driven Typst resume framework designed to make customization simple.
@@ -39,7 +39,7 @@ Configure the appearance of the resume with `resume.with`:
 #show: resume.with(
   contact-info-position: center,
   contacts-separator: [#h(0.4em)◆#h(0.4em)],
-  inline-separator: [ / ],
+  inline-separator: [ \/ ],
   link-color: rgb("#B5651D"),
   accent-color: rgb("#654321"),
   font: "Libertinus Serif",
