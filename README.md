@@ -5,7 +5,7 @@
 [![Project License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/harshkaso/monofolio?style=flat&logo=github)](https://github.com/harshkaso/monofolio/stargazers)
 
-A modular, data-driven Typst resume framework designed to make customization simple.
+A modular, data-driven, and minimal Typst resume framework designed to make customization simple.
 
 ![example resumes built using monofolio template](banner.png)
 
