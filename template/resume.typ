@@ -1,5 +1,5 @@
 
-#import "@preview/resumetyp:0.1.0": *
+#import "@preview/monofolio:0.1.0": *
 
 #show: resume.with(
   contact-info-position: center,

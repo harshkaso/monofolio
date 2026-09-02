@@ -1,13 +1,13 @@
-# ResumeTyp
+# Monofolio
 
-[![Typst Universe](https://img.shields.io/badge/Typst%20Universe-resumetyp-239dad?logo=typst)](https://typst.app/universe/package/resumetyp)
-[![Current package version](https://img.shields.io/badge/version-0.1.0-blue)](https://typst.app/universe/package/resumetyp)
+[![Typst Universe](https://img.shields.io/badge/Typst%20Universe-monofolio-239dad?logo=typst)](https://typst.app/universe/package/monofolio)
+[![Current package version](https://img.shields.io/badge/version-0.1.0-blue)](https://typst.app/universe/package/monofolio)
 [![Project License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/harshkaso/resumetyp?style=flat&logo=github)](https://github.com/harshkaso/resumetyp/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/harshkaso/monofolio?style=flat&logo=github)](https://github.com/harshkaso/monofolio/stargazers)
 
 A modular, data-driven Typst resume framework designed to make customization simple.
 
-![example resumes built using resumetyp template](banner.png)
+![example resumes built using monofolio template](banner.png)
 
 ## Features
 
@@ -24,7 +24,7 @@ A modular, data-driven Typst resume framework designed to make customization sim
 Create a new Typst project using the package or import it directly:
 
 ```typst
-#import "@preview/resumetyp:0.1.0": *
+#import "@preview/monofolio:0.1.0": *
 ```
 
 The package exposes the resume configuration and content functions directly.
@@ -34,7 +34,7 @@ The package exposes the resume configuration and content functions directly.
 Configure the appearance of the resume with `resume.with`:
 
 ```typst
-#import "@preview/resumetyp:0.1.0": *
+#import "@preview/monofolio:0.1.0": *
 
 #show: resume.with(
   contact-info-position: center,
