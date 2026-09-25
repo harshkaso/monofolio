@@ -134,6 +134,8 @@ The `resume.with` function accepts the following options.
 | Option                  | Default                   | Description                               |
 | ----------------------- | ------------------------- | ----------------------------------------- |
 | `contact-info-position` | `center`                  | Alignment of contact information.         |
+| `contacts-separator`    | `[#h(0.45em)◆#h(0.45em)]` | Separator between contact fields.         |
+| `inline-separator`      | `[#h(0.35em)/#h(0.35em)]` | Separator between inline metadata fields. |
 | `link-color`            | `#B5651D`               | Colour used for links.                    |
 | `accent-color`          | `#654321`               | Colour used for headings and accents.     |
 | `font`                  | `"libertinus serif"`      | Font used throughout the document.        |
@@ -142,8 +144,6 @@ The `resume.with` function accepts the following options.
 | `entry-spacing`         | `0.325em`                 | Vertical space between section entries.   |
 | `page-margin`           | `0.5in`                   | Page margin.                              |
 | `list-marker`           | `[--]`                    | Marker used for resume accomplishments.   |
-| `contacts-separator`    | `[#h(0.45em)◆#h(0.45em)]` | Separator between contact fields.         |
-| `inline-separator`      | `[#h(0.35em)/#h(0.35em)]` | Separator between inline metadata fields. |
 | `justify`               | `true`                    | Whether paragraph text is justified.      |
 
 ## Contact Information
