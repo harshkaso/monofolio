@@ -24,7 +24,7 @@ A modular, data-driven, and minimal Typst resume framework designed to make cust
 Create a new Typst project using the package or import it directly:
 
 ```typst
-#import "@preview/monofolio:0.1.0": *
+#import "@preview/monofolio:0.1.1": *
 ```
 
 The package exposes the resume configuration and content functions directly.
