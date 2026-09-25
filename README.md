@@ -1,7 +1,7 @@
 # Monofolio
 
 [![Typst Universe](https://img.shields.io/badge/Typst%20Universe-monofolio-239dad?logo=typst)](https://typst.app/universe/package/monofolio)
-[![Current package version](https://img.shields.io/badge/version-0.1.0-blue)](https://typst.app/universe/package/monofolio)
+[![Current package version](https://img.shields.io/badge/version-0.1.1-blue)](https://typst.app/universe/package/monofolio)
 [![Project License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/harshkaso/monofolio?style=flat&logo=github)](https://github.com/harshkaso/monofolio/stargazers)
 
