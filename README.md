@@ -131,20 +131,20 @@ The data definitions and printed sections are independent, so the output order c
 
 The `resume.with` function accepts the following options.
 
-| Option                  | Default              | Description                               |
-| ----------------------- | -------------------- | ----------------------------------------- |
-| `contact-info-position` | `left`               | Alignment of contact information.         |
-| `link-color`            | `navy`             | Colour used for links.                    |
-| `accent-color`          | `navy`             | Colour used for headings and accents.     |
-| `font`                  | `"libertinus serif"` | Font used throughout the document.        |
-| `font-size`             | `11pt`               | Base document font size.                  |
-| `line-spacing`          | `0.65em`             | Paragraph leading.                        |
-| `entry-spacing`         | `0.325em`            | Vertical space between section entries.   |
-| `page-margin`           | `0.5in`              | Page margin.                              |
-| `list-marker`           | `[--]`               | Marker used for resume accomplishments.   |
-| `contacts-separator`    | `[/]`                | Separator between contact fields.         |
-| `inline-separator`      | `[/]`                | Separator between inline metadata fields. |
-| `justify`               | `true`               | Whether paragraph text is justified.      |
+| Option                  | Default                   | Description                               |
+| ----------------------- | ------------------------- | ----------------------------------------- |
+| `contact-info-position` | `center`                  | Alignment of contact information.         |
+| `link-color`            | `#B5651D`               | Colour used for links.                    |
+| `accent-color`          | `#654321`               | Colour used for headings and accents.     |
+| `font`                  | `"libertinus serif"`      | Font used throughout the document.        |
+| `font-size`             | `11pt`                    | Base document font size.                  |
+| `line-spacing`          | `0.65em`                  | Paragraph leading.                        |
+| `entry-spacing`         | `0.325em`                 | Vertical space between section entries.   |
+| `page-margin`           | `0.5in`                   | Page margin.                              |
+| `list-marker`           | `[--]`                    | Marker used for resume accomplishments.   |
+| `contacts-separator`    | `[#h(0.45em)◆#h(0.45em)]` | Separator between contact fields.         |
+| `inline-separator`      | `[#h(0.35em)/#h(0.35em)]` | Separator between inline metadata fields. |
+| `justify`               | `true`                    | Whether paragraph text is justified.      |
 
 ## Contact Information
 
