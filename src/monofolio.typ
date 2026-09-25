@@ -12,19 +12,21 @@
 // CONFIG STATES
 #let resume-inline-separator = state("inline-separator", [])
 #let resume-contacts-separator = state("contacts-separator", [])
+#let resume-entry-spacing = state("entry-spacing", 0pt)
 
 // TEMPLATE CONFIG
 #let resume(
-  contact-info-position: left,
-  link-color: navy,
-  accent-color: navy,
-  font: "libertinus serif", 
+  contact-info-position: center,
+  contacts-separator: [#h(0.45em)◆#h(0.45em)],
+  inline-separator: [#h(0.35em)/#h(0.35em)],
+  link-color: rgb("#B5651D"),
+  accent-color: rgb("#654321"),
+  font: "Libertinus Serif",
   font-size: 11pt,
   line-spacing: 0.65em,
+  entry-spacing: 0.325em,
   page-margin: 0.5in,
   list-marker: [--],
-  contacts-separator: [\/],
-  inline-separator: [\/],
   justify: true,
   doc
 ) = {
@@ -47,6 +49,7 @@
 
   context resume-inline-separator.update(_ => inline-separator)
   context resume-contacts-separator.update(_ => contacts-separator)
+  context resume-entry-spacing.update(_ => entry-spacing)
   doc
 }
 
@@ -147,6 +150,12 @@
 #let resume-section(title, body) = {
   block[
     == #title
+    #body
+  ]
+}
+
+#let section-entry(body) = {
+  block(below: par.leading)[
     #body
   ]
 }
@@ -319,16 +328,20 @@
 #let print-experience = {
   resume-section("Experiences",
   context{
-    for entry in resume-experiences.get() [
+    let entries = resume-experiences.get()
+    for (i, entry) in entries.enumerate() [
       #if entry.new-page [#colbreak()]
-      #strong[#entry.title]#if entry.company != none [#inline-separator#entry.company]#if entry.location != none [#inline-separator#entry.location]
-      #h(1fr)
-      *#entry.start-date 
-      #if entry.start-date != none and entry.end-date != none [ -- ] 
-      #entry.end-date*
-      #for accomplishment in entry.accomplishments [
-        - #accomplishment
+      #section-entry[
+        #strong[#entry.title]#if entry.company != none [#inline-separator#entry.company]#if entry.location != none [#inline-separator#entry.location]
+        #h(1fr)
+        *#entry.start-date 
+        #if entry.start-date != none and entry.end-date != none [ -- ] 
+        #entry.end-date*
+        #for accomplishment in entry.accomplishments [
+          - #accomplishment
+        ]
       ]
+      #if i < entries.len() - 1 [#v(resume-entry-spacing.get())]
     ]
   })
 }
@@ -336,16 +349,20 @@
 #let print-projects = {
   resume-section("Projects",
   context{
-    for entry in resume-projects.get() [
+    let entries = resume-projects.get()
+    for (i, entry) in entries.enumerate() [
       #if entry.new-page [#colbreak()]
-      #strong[#entry.name]#if entry.info != none [#inline-separator#entry.info]
-      #h(1fr)
-      *#entry.start-date 
-      #if entry.start-date != none and entry.end-date != none [ -- ]
-      #entry.end-date*
-      #for accomplishment in entry.accomplishments [
-       - #accomplishment
-     ]
+      #section-entry[
+        #strong[#entry.name]#if entry.info != none [#inline-separator#entry.info]
+        #h(1fr)
+        *#entry.start-date 
+        #if entry.start-date != none and entry.end-date != none [ -- ]
+        #entry.end-date*
+        #for accomplishment in entry.accomplishments [
+         - #accomplishment
+        ]
+      ]
+      #if i < entries.len() - 1 [#v(resume-entry-spacing.get())]
     ]
   })
 }
@@ -356,17 +373,23 @@
     let entries = resume-education.get()
     for (i, entry) in entries.enumerate() [
       #if entry.new-page [#colbreak()]
-      #strong[#entry.degree]#if entry.school != none [#inline-separator#entry.school]#if entry.location != none [#inline-separator#entry.location]
-      #h(1fr)
-      *#entry.start-date 
-      #if entry.start-date != none and entry.end-date != none [ -- ] 
-      #entry.end-date* \
-      #if entry.gpa != none [
-        _*GPA* — #entry.gpa _
-      ]#if entry.gpa != none and entry.coursework != none [#inline-separator]#if entry.coursework != none [_*Coursework* — #entry.coursework _]
-      #if i < entries.len() - 1 [
-        #v(1pt)
+      #section-entry[
+        #strong[#entry.degree]#if entry.school != none [#inline-separator#entry.school]#if entry.location != none [#inline-separator#entry.location]
+        #h(1fr)
+        *#entry.start-date 
+        #if entry.start-date != none and entry.end-date != none [ -- ] #entry.end-date* 
+        #if entry.gpa != none or entry.coursework != none [
+          #linebreak()
+          #if entry.gpa != none [
+            _*GPA* — #entry.gpa _
+          ] #if entry.gpa != none and entry.coursework != none [
+            #inline-separator
+          ] #if entry.coursework != none [
+            _*Coursework* — #entry.coursework _
+          ]
+        ]
       ]
+      #if i < entries.len() - 1 [#v(resume-entry-spacing.get())]
     ]
   })
 }
@@ -377,10 +400,15 @@
     let entries = resume-certifications.get()
     for (i, entry) in entries.enumerate() [
       #if entry.new-page [#colbreak()]
-      #strong[#entry.name]#if (entry.issuer != none) [#inline-separator#entry.issuer]#if entry.date != none [#h(1fr)*#entry.date*]
-      #for highlight in entry.highlights [
-        - #highlight
+      #section-entry[
+        #strong[#entry.name]#if (entry.issuer != none) [#inline-separator#entry.issuer]
+        #h(1fr)
+        *#entry.date*
+        #for highlight in entry.highlights [
+          - #highlight
+        ]
       ]
+      #if i < entries.len() - 1 [#v(resume-entry-spacing.get())]
     ]
   })
 }

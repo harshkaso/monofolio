@@ -1,5 +1,5 @@
 
-#import "@preview/monofolio:0.1.0": *
+#import "monofolio.typ": *
 
 #show: resume.with(
   contact-info-position: center,
@@ -10,6 +10,7 @@
   font: "Libertinus Serif",
   font-size: 11pt,
   line-spacing: 0.65em,
+  entry-spacing: 0.325em,
   page-margin: 0.5in,
   list-marker: [--],
   justify: true,
@@ -94,14 +95,11 @@
   company: [Institute of Nonsense],
   location: [Pebblewick, Cloudland],
   start-date: [Jun 2021],
-  end-date: [Feb 2023], 
+  end-date: [Feb 2023],
   [Processed 480,000 synthetic moon records using #emph[QuantaQL].],
-  [Built #emph[FluxLogic] pipelines for transforming numerical artifacts
-  into structured analytical scrolls.],
-  [Created #emph[Nebula Plotting] visualizations for imaginary
-  commercial phenomena.],
-  [Purified datasets by removing corrupted numbers, rogue decimals,
-  and one particularly troublesome number 47.]
+  [Built #emph[FluxLogic] pipelines for transforming numerical artifacts into structured analytical scrolls.],
+  [Created #emph[Nebula Plotting] visualizations for imaginary commercial phenomena.],
+  [Purified datasets by removing corrupted numbers, rogue decimals, and one particularly troublesome number 47.]
 )
 
 #experience(
@@ -135,8 +133,7 @@
   info: [QuantaQL, HyperCalc, Cloud Mapping],
   start-date: [Sep 2023],
   end-date: [Nov 2023],
-  [Catalogued imaginary dragons by wing geometry, treasure preference,
-  nap duration, and suspiciousness.]
+  [Catalogued imaginary dragons by wing geometry, treasure preference, nap duration, and suspiciousness.]
 )
 
 #project(
@@ -159,12 +156,7 @@
   start-date: [Sep 2021],
   end-date: [Jun 2023],
   gpa: [4.87],
-  coursework: [
-    Nonsense Theory,
-    Computational Daydreaming,
-    Imaginary Data,
-    Moon Mathematics
-  ]
+  coursework: [Nonsense Theory, Computational Daydreaming, Imaginary Data, Moon Mathematics]
 )
 
 #education(
@@ -174,11 +166,7 @@
   start-date: [Sep 2017],
   end-date: [Apr 2021],
   gpa: [4.42],
-  coursework: [
-    Enchanted Algorithms,
-    Numerical Spellcraft,
-    Calculator Theory
-  ],
+  coursework: [Enchanted Algorithms, Numerical Spellcraft, Calculator Theory],
 )
 
 // --------------------------------------------------------------------------------
@@ -189,16 +177,14 @@
   name: [Certified Spreadsheet Whisperer],
   issuer: [Guild of Imaginary Analysts],
   date: [Jun 2024],
-  [Demonstrated advanced spreadsheet whispering and circular-reference
-  negotiation.]
+  [Demonstrated advanced spreadsheet whispering and circular-reference negotiation.]
 )
 
 #certification(
   name: [GoblinOps Practitioner],
   issuer: [Institute of Goblin Engineering],
   date: [Feb 2024],
-  [Completed training in goblin coordination, recursive paperwork,
-  and distributed snack allocation.]
+  [Completed training in goblin coordination, recursive paperwork, and distributed snack allocation.]
 )
 
 
