@@ -34,17 +34,18 @@ The package exposes the resume configuration and content functions directly.
 Configure the appearance of the resume with `resume.with`:
 
 ```typst
-#import "@preview/monofolio:0.1.0": *
+#import "@preview/monofolio:0.1.1": *
 
 #show: resume.with(
   contact-info-position: center,
-  contacts-separator: [#h(0.4em)◆#h(0.4em)],
-  inline-separator: [ \/ ],
+  contacts-separator: [#h(0.45em)◆#h(0.45em)],
+  inline-separator: [#h(0.35em)/#h(0.35em)],
   link-color: rgb("#B5651D"),
   accent-color: rgb("#654321"),
   font: "Libertinus Serif",
   font-size: 11pt,
   line-spacing: 0.65em,
+  entry-spacing: 0.325em,
   page-margin: 0.5in,
   list-marker: [--],
   justify: true,
@@ -133,11 +134,12 @@ The `resume.with` function accepts the following options.
 | Option                  | Default              | Description                               |
 | ----------------------- | -------------------- | ----------------------------------------- |
 | `contact-info-position` | `left`               | Alignment of contact information.         |
-| `link-color`            | `navy`               | Colour used for links.                    |
-| `accent-color`          | `navy`               | Colour used for headings and accents.     |
+| `link-color`            | `navy`             | Colour used for links.                    |
+| `accent-color`          | `navy`             | Colour used for headings and accents.     |
 | `font`                  | `"libertinus serif"` | Font used throughout the document.        |
 | `font-size`             | `11pt`               | Base document font size.                  |
 | `line-spacing`          | `0.65em`             | Paragraph leading.                        |
+| `entry-spacing`         | `0.325em`            | Vertical space between section entries.   |
 | `page-margin`           | `0.5in`              | Page margin.                              |
 | `list-marker`           | `[--]`               | Marker used for resume accomplishments.   |
 | `contacts-separator`    | `[/]`                | Separator between contact fields.         |

@@ -1,5 +1,5 @@
 
-#import "monofolio.typ": *
+#import "@preview/monofolio:0.1.1": *
 
 #show: resume.with(
   contact-info-position: center,
